@@ -29,6 +29,10 @@ a:hover{
 font-size: 30px;
 }
 
+#qrcodeMobile{
+  display: none;
+}
+
 h2{
   font-family:'Public Sans';
   font-weight: bold;
@@ -49,6 +53,10 @@ h3{
   margin-right:auto;
   margin-left:auto;
   display:table;
+}
+
+#URLSessionID{
+  overflow-wrap: break-word;
 }
 
 .logo{
@@ -168,6 +176,14 @@ h3{
     float:left;
     margin-left:10px;
     margin-bottom:20px;
+  }
+
+  #qrcode{
+    display: none !important;
+  }
+
+  #qrcodeMobile{
+    display: block;
   }
 
   .company{

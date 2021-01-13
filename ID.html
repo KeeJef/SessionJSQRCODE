@@ -59,6 +59,7 @@ const onClick = evt => {
 </script>
         <center>
         <div id="qrcode"></div>
+        <div id="qrcodeMobile"></div>
         <!-- Need to insert the url registered for the server. -->
       </center>
 
@@ -71,6 +72,12 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 	text: sessionID,
 	width: 512,
 	height: 512,
+});
+
+var qrcode = new QRCode(document.getElementById("qrcodeMobile"), {
+	text: sessionID,
+	width: 256,
+	height: 256,
 });
  
 </script>
