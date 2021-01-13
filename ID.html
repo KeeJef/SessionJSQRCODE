@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="qrcode.min.js"></script>
+  
+    <title>Session Public Chat - Session open group</title>
+  
+</head>
+
+<body>
+  <section class="header">
+    <div class="logo">
+      <a href="https://getsession.org"><img src="sessionsitelogo1.png" width="200px"></a>
+    </div>
+    <div class="message">
+      <p align="right"><font size="6">Send Messages Not Metadata.</font></p>
+    </div>
+  </section>
+
+  <section class="content">
+    <section class="banner">
+      <div class="download">
+        <center>
+          Don't have <a href="https://getsession.org/"><b>Session</b></a> yet? <a href="https://getsession.org/download">Try it now!</a>
+        </center>
+      </div>
+    </section>
+
+
+    <section class="groupchannel">
+      <center>
+        <br>
+        <div class="heading">Session ID:</div>
+        <br>
+        <div id = URLSessionID></div>
+      </center>
+    </section>
+
+
+<br>
+
+    <section class="url">
+<script>
+const onClick = evt => {
+  const link = document.querySelector('a.copyUrl');
+  const range = document.createRange();
+  range.selectNode(link);
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+
+  const successful = document.execCommand('copy');
+  console.log('copied to clipboard', successful)
+  return false;
+};
+</script>
+        <center>
+        <div id="qrcode"></div>
+        <!-- Need to insert the url registered for the server. -->
+      </center>
+
+<script type="text/javascript">
+sessionID = window.location.search
+sessionID = sessionID.replace("?", '');
+document.getElementById("URLSessionID").innerText = sessionID
+
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: sessionID,
+	width: 512,
+	height: 512,
+});
+ 
+</script>
+    </section>
+
+    <section class="howto">
+    </section>
+  </section>
+
+  <section class="footer">
+    <div class ="footerwrapper">
+      <div class="about">
+        <h3>About</h3>
+        <a href="https://getsession.org">Session</a><br>
+        <a href="https://getsession.org/wp-content/uploads/2020/02/Session-Whitepaper.pdf">Whitepaper</a><br>
+        <a href="https://getsession.org/blog/">Blog</a><br>
+        <a href="https://getsession.org/faq/">FAQ</a><br>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <a href="https://loki.foundation/">Loki Foundation</a><br>
+        <a href="https://oxen.io/">Oxen Project</a><br>
+        <a href="https://lokinet.org/">Lokinet</a><br>
+        <a href="https://coinstop.io">Merch</a><br>
+        <a href="https://getsession.org/contact-us/">Contact us</a><br>
+      </div>
+      <div class="socials">
+        <h3>Socials</h3>
+        <a href="https://www.facebook.com/SessionMessenger/">Facebook</a><br>
+        <a href="https://twitter.com/session_app">Twitter</a><br>
+        <a href="https://github.com/Loki-project">Github</a><br>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

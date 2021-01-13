@@ -1,0 +1,191 @@
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url(https://fontlibrary.org/assets/fonts/public-sans/5480191a1121665efd8fd99ea767060b/886a3fce7235512403f5652b431d06e3/PublicSansRegular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family:'Public Sans';
+}
+
+a{
+  color:#00F782;
+  text-decoration: none;
+}
+
+.footer a{
+  color:white;
+}
+
+a:hover{
+  color:#78be20;
+}
+
+.heading{
+font-size: 30px;
+}
+
+h2{
+  font-family:'Public Sans';
+  font-weight: bold;
+}
+
+h3{
+  font-family:'Public Sans';
+  color:#00F782;
+  font-weight: bold;
+}
+
+.opengrouplogo img{
+  border-radius:100px;
+}
+
+.header{
+  height:10vh;
+  margin-right:auto;
+  margin-left:auto;
+  display:table;
+}
+
+.logo{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.message{
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.banner{
+  background-color:#3a3a3a;
+  min-height:50px;
+  vertical-align:middle;
+  display:table;
+  width:100%;
+}
+
+.download{
+  color:#fff;
+  vertical-align: middle;
+  font-size: 25px;
+  height: 50px;
+  display: table-cell;
+}
+
+.groupchannel{
+  max-width:1080px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.url{
+  padding-bottom:20px;
+}
+
+.howto{
+  padding-bottom:20px;
+}
+
+.content{
+  min-height:75vh;
+}
+
+.footer{
+  min-height:10vh;
+  background-color:#3a3a3a;
+}
+
+.btn {
+  width:100px;
+  background-color: #3a3a3a;
+  border: none;
+  color: #00F782;
+  border-radius:20px;
+  padding:10px 10px 10px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover{
+  background-color:#00F782;
+  color:#3a3a3a;
+}
+
+@media (min-width: 1025px) {
+  .header{
+    width:960px;
+  }
+
+  .footerwrapper{
+    width:960px;
+  }
+
+  .about{
+    width:320px;
+    float:left;
+    margin-bottom:20px;
+  }
+
+  .company{
+    width:320px;
+    float:left;
+    margin-bottom:20px;
+  }
+
+  .socials{
+    width:320px;
+    float:left;
+    margin-bottom:20px;
+  }
+
+  .footerwrapper{
+    margin-right:auto;
+    margin-left:auto;
+    display:table;
+  }
+}
+
+@media (max-width: 1024px) {
+  .groupchannel{
+    margin-right:20px;
+    margin-left:20px;
+  }
+
+  .message{
+    display:none;
+  }
+
+  .about{
+    float:left;
+    margin-left:10px;
+    margin-bottom:20px;
+  }
+
+  .company{
+    float:left;
+    margin-left:10px;
+    margin-bottom:20px;
+  }
+
+  .socials{
+    float:left;
+    margin-left:10px;
+    margin-bottom:20px;
+  }
+
+  .footerwrapper{
+    margin-right:10px;
+    margin-left:10px;
+    display:table;
+  }
+}
+
